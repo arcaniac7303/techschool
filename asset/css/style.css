@@ -662,6 +662,11 @@ html {
     background-position: center;
     background-size: contain;
     flex-shrink: 0;
+    transition: transform var(--transition-fast);
+}
+
+.faq-card.active h4::after {
+    transform: rotate(45deg);
 }
 
 /* Form */
